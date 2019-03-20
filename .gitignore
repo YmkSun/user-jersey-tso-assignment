@@ -1,0 +1,8 @@
+*.class
+*.war
+*.ear
+build
+.settings
+.classpath
+.project
+target
