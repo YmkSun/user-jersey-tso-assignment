@@ -1,4 +1,4 @@
-package com.ymk.tso.controller;
+package com.ymk.tso.controller.rest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
