@@ -2,6 +2,11 @@ package com.ymk.tso.data;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * User data model
+ * @author yemyokyaw
+ *
+ */
 @XmlRootElement
 public class UserData {
 	
@@ -91,6 +96,9 @@ public class UserData {
 		this.status = status;
 	}
 
+	/**
+	 * clearProperties : set default values
+	 */
 	private void clearProperties() {
 		this.id = 0L;
 		this.username = "";

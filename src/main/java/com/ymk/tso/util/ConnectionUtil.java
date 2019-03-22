@@ -5,10 +5,19 @@ import java.sql.DriverManager;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * ConnectionUtil class for database connection
+ * @author yemyokyaw
+ *
+ */
 public class ConnectionUtil {
 
 	private static Map<String, String> connectionMap = new HashMap<>();
 
+	/**
+	 * getConnection method to get database connection
+	 * @return
+	 */
 	public static Connection getConnection() {
 
 		if (!connectionMap.isEmpty() && connectionMap.size()==4) {
@@ -18,6 +27,11 @@ public class ConnectionUtil {
 		return null;
 	}
 
+	/**
+	 * getConnectionByProperties method to configure the connection properties
+	 * @param properties
+	 * @return
+	 */
 	private static Connection getConnectionByProperties(String... properties) {
 		String driver = properties[0];
 		String url = properties[1];
@@ -36,6 +50,10 @@ public class ConnectionUtil {
 		return null;
 	}
 
+	/**
+	 * setConnectionProperties to keep connection properties
+	 * @param props
+	 */
 	public static void setConnectionProperties(Map<String, String> props) {
 		connectionMap = props;
 	}

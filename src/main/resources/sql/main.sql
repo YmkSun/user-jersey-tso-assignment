@@ -13,7 +13,6 @@ CREATE TABLE tb_user  (
      password VARCHAR(30) NOT NULL,
      email VARCHAR(150),
      phone VARCHAR(150),
-     department INT,
      department INT DEFAULT 0,
      role SMALLINT DEFAULT 0,
      status SMALLINT DEFAULT 0,

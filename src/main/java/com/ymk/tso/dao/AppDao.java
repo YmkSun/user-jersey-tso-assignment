@@ -6,13 +6,13 @@ import java.util.List;
 
 public interface AppDao<T> {
 	
-	List<T> getAll(String val, Connection con) throws SQLException;
+	List<T> getAll(String val, long id, Connection con) throws SQLException;
 
 	T getById(long id, Connection con) throws SQLException;
 
 	T save(T data, Connection con) throws SQLException;
 
-	T update(long id, T data, Connection con) throws SQLException;
+	T update(long id, T data, short role, Connection con) throws SQLException;
 
 	int delete(long id, Connection con) throws SQLException;
 
