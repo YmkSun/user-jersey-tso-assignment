@@ -8,6 +8,11 @@ package com.ymk.tso.exception;
 @SuppressWarnings("serial")
 public class RoleAuthException extends RuntimeException {
 
+	/**
+	 * Enum values for the exceptions
+	 * @author yemyokyaw
+	 *
+	 */
 	public static enum RESOURCE_CANNOT_BE_ACCESSED_REASON {
 
 		AUTH_INVALID, NON_ADMIN, USER_HAS_NO_ACCESS, NO_AUTH;
